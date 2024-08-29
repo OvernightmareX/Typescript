@@ -18,10 +18,10 @@ let author: Author[] = [
 let library: Library = new Library(); 
 
 console.log("Ajout de 4 livres :");
-library.addBook(createBook("Tuer une ghoule avec un trombone", author[0], 100, true));
+library.addBook(createBook("Tuer une ghoule avec un trombone", author[0], 100));
 library.addBook(createBook("Les portails et moi", author[0], 200, false));
 library.addBook(createBook("La magie pour les nuls", author[1], 300, false));
-library.addBook(createBook("Les aventures de Dandelion", author[2], 4000, true));
+library.addBook(createBook("Les aventures de Dandelion", author[2], 4000));
 console.table(library.books); 
 
 console.log("GetBook avec l'auteur 'Geralt' :");
