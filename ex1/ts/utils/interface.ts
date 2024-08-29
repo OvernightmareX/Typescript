@@ -1,5 +1,3 @@
-export type Status = "en attente" | "expédiée" | "livrée"; 
-
 export interface Author {
     name: string; 
     birthYear: number; 

@@ -11,12 +11,6 @@ let author = [
     { name: "Triss", birthYear: 1128, genres: ["magie", "politique"] },
     { name: "Jasquier", birthYear: 1350, genres: ["romance", "comédie"] },
 ];
-let livres = [
-    { title: "Tuer une ghoule avec un trombone", author: author[0], pages: 100, isAvailable: true },
-    { title: "Les portails et moi", author: author[0], pages: 200, isAvailable: false },
-    { title: "La magie pour les nuls", author: author[1], pages: 300, isAvailable: false },
-    { title: "Les aventures de Dandelion", author: author[2], pages: 4000, isAvailable: true },
-];
 let library = new Library();
 console.log("Ajout de 4 livres :");
 library.addBook(createBook("Tuer une ghoule avec un trombone", author[0], 100, true));

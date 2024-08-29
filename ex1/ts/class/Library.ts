@@ -1,4 +1,4 @@
-import { Book } from "../utils/interface";
+import { Book } from "../utils/interface.js";
 
 export class Library {
     books: Book[] = []; 
