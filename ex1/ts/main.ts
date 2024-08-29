@@ -6,7 +6,7 @@ function createBook(title: string, author: Author, pages: number, isAvailable: b
     return newBook; 
 }
 
-function toggleAvailability(book: Book){
+function toggleAvailability(book: Book): void{
     book.isAvailable = !book.isAvailable;
 }
 let author: Author[] = [

@@ -3,16 +3,16 @@ import { Book } from "../utils/interface.js";
 export class Library {
     books: Book[] = []; 
 
-    addBook(book: Book){
+    addBook(book: Book): void{
         this.books.push(book); 
     }
 
-    findBookByTitle(title: string){
+    findBookByTitle(title: string): Book{
         let book: Book = this.books.find((element) => element.title == title);
         return book; 
     }
 
-    getBooksByAuthor(authorName: string){
+    getBooksByAuthor(authorName: string): Book[]{
         let bookList: Book[] = []; 
 
         this.books.forEach((book) => {
@@ -22,7 +22,7 @@ export class Library {
         return bookList; 
     }
 
-    listAvailableBooks(){
+    listAvailableBooks(): Book[]{
         let bookList: Book[] = []; 
 
         this.books.forEach((book) => {
@@ -32,7 +32,7 @@ export class Library {
         return bookList; 
     }
 
-    removeBook(title: string){
+    removeBook(title: string): void{
         let index: number = this.books.indexOf(this.findBookByTitle(title));
         this.books.splice(index, index+1);
     }
